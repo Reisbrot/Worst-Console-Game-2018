@@ -2,11 +2,10 @@ package main;
 
 
 public class ItemMenu {
-    static int rowLength = 0;
-    static String itemName = "Unknown Item";
+    int rowLength = 0;
+    String itemName = "Unknown Item";
 
-    
-       public void ItemMenu(String itemName){
+      ItemMenu(String itemName){
       System.out.printf("----" + itemName + "----\n");
       System.out.println("");
       System.out.println("");
@@ -16,10 +15,11 @@ public class ItemMenu {
       System.out.println("");
       System.out.printf(RowEndBuilder().toString()+"\n");
     }
-      public void ItemMenu(String itemName, String description){
-          
+      ItemMenu(String itemName, String description){
+      setItemName(itemName);
+      setDescription(description);    
       System.out.printf("----" + itemName + "----\n");
-      System.out.println("");
+      System.out.println(description);
       System.out.println("");
       System.out.println("");
       System.out.println("");
@@ -34,6 +34,13 @@ public class ItemMenu {
      for(int i = 0; i < rowLength; i++)
          rowEnd.append('-');
      return rowEnd;
+    }
+
+    private void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+    private void setDescription(String description) {
+        this.itemName = itemName;
     }
     
 }
