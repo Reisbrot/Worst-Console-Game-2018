@@ -22,20 +22,19 @@ public class Chemical implements Item{
         this.boilingTemperature = boilingTemperature;
     }
 
+    @Override
     public int getWeight() {
         return weight;
     }
 
+    @Override
     public int getHardness() {
         return hardness;
     }
 
+    @Override
     public Smell getSmell() {
         return smell;
-    }
-
-    public String getPhase() {
-        return phase;
     }
 
     public int getMeltingTemperature() {
@@ -48,6 +47,11 @@ public class Chemical implements Item{
 
     public String getDescription() {
         return description;
+    }
+
+    @Override
+    public String getAggregateState() {
+        return phase;
     }
  
     

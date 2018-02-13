@@ -1,1 +1,63 @@
+Good, there should be a Unit Sytem. I came to this, after I tried to make some shit with the Reisbrot.
+Lol.
+
+Quick Ref is this Table. Everything else is not very important. It just hangs around.
+
+Einheit  Groesse  Implemented
+
+Energy   FOPS     No
+Weight   Gram     No
+Length   Metre    No
+Hardness Mohs     No
+Temp.    Celsius  No
+Time     Seconds  No
+Speed    m/s      No
+Accele.  m/s^2    No
+Part     percent  No
+
+
+
+So, I guess Ill implement one standard Energy-Unit (Food, Physics, etc.) like Joule or stuff
+But I wont call it Joule
+Ill call it:::: Waiiiit
+Ill call it >>FOPS<<
+
+One Item is the amount of its weight. So, if Ive got a half Reisbrot, its 0,5 of itself.
+At weight, I guess Weight will get something normal,
+Ill call it >>ElectronVolts JOKJOKEJOKE its just >>Gram<<<<
+
+So. Length and Stuff is >>Metres<<, since its easy and stuff
+
+Hardness is from 1 to 10, with like 2 decimal points, after the https://de.wikipedia.org/wiki/H%C3%A4rte#Mohs >>Mohs hardness scale<<.
+Hardness will determine how Items interact with the "Scene", the player and other Items. If you throw it, if you want to change it, etcetera.
+
+What else do we have? Smell is defined in the Smell class. lol
+Umm - --  - Auw Right temperature is in good ol >>Celsius<<, cause wtf Kelvin its like Kevin no
+racism but what ever >>°C<< dito.
+
+TIMEEEE:
+Since time is only an integer, its in >>Seconds<<. I guess thats precise enough.
+Time is NOT linear, means laws of relativity are a real thing here!
+Wait I have to find a formula.. oh for that i need Accelation and Speed first.
+
+Lets see..
+Speed is in >>Metres per Second<<, since those are the standard Units, and
+Acceleartion is also SI-Conform, so its >>Meters per Second squared<<, so if I
+would take a Acc. of like 10, in 2 seconds it would be 20meters per second
+faster.
+
+Soo now back to relativity: 
+For every metre you move faster, the things around you will happen a millionth 
+of a second slower. LOLZ. Not implemented yet I guess. I dont know. But i guess.
+
+Symptoms, like from food, are effects to biological things. For example, if a
+symptom is diarrhea, you have to shit more and youll need more nutrients.
+And the stuff in your shit is different. And you arent able to do as much as
+normally. That kind of stuff are symptoms. The overdose amount is in gram.
+So if you take 1 Reisbrot for example, youll eat its weight property worth of weight
+or so lol i no god englisch menn.
+
+content is in >>percent<<
+
+>>>(I didnt mention i guess, OF COURSE THE UNITS WILL GET FORMATTED FOR THE PLAYER)<<<
 
