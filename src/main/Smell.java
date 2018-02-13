@@ -3,13 +3,12 @@ package main;
 public class Smell {
     String smell;
     
-    Smell(){
+    public Smell(){
         smell = "Geruchslos";
         System.out.println(this.smell);
-
     }
     
-    Smell(int smellscale){
+    public Smell(int smellscale){
         switch(smellscale){
             case 0: smell = "Geruchslos"; break;
             case 1: smell = "Sehr Schwach"; break;
@@ -22,12 +21,9 @@ public class Smell {
             case 8: smell = "Reizend"; break;
             default: smell = "Geruchslos";
         }
-        System.out.println(this.smell);
-
     }
     
-    Smell(String smell){
-
+    public Smell(String smell){
         this.smell = smell;
     }
 }

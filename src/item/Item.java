@@ -4,14 +4,12 @@ import main.Smell;
 import java.awt.Dimension;
 
 
-public interface Item {
-    void setWeight(int weight);
+public interface Item { 
+     void setWeight(int weight);
     
-    void setHardness(int hardness);
+     void setHardness(int hardness);
     
-    void setSmell (Smell smell);
-    
-    
-    
-    
+     void setSmell (Smell smell);
+     
+     void setAggregateState (String phase);
 }
