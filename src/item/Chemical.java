@@ -12,6 +12,7 @@ public class Chemical implements Item{
     String phase = "solid"; //liquid, gas
     int meltingTemperature = 1;
     int boilingTemperature = 1;
+    String description = "W\u00e4hlt die Partei";
 
     public void setMeltingTemperature(int meltingTemperature) {
         this.meltingTemperature = meltingTemperature;
@@ -20,24 +21,34 @@ public class Chemical implements Item{
     public void setBoilingTemperature(int boilingTemperature) {
         this.boilingTemperature = boilingTemperature;
     }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public int getHardness() {
+        return hardness;
+    }
+
+    public Smell getSmell() {
+        return smell;
+    }
+
+    public String getPhase() {
+        return phase;
+    }
+
+    public int getMeltingTemperature() {
+        return meltingTemperature;
+    }
+
+    public int getBoilingTemperature() {
+        return boilingTemperature;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+ 
     
-    @Override
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    @Override
-    public void setHardness(int hardness) {
-        this.hardness = hardness;
-    }
-
-    @Override
-    public void setSmell(Smell smell) {
-        this.smell = smell;
-    }
-
-    @Override
-    public void setAggregateState(String phase) {
-        this.phase = phase;
-    }
 }

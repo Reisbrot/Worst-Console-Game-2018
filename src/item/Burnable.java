@@ -2,6 +2,6 @@ package item;
 
 
 public interface Burnable extends Item{
-     void setFuelValue(int fuelValue);
-     void setCombustionProducts(String[] products);
+     int getFuelValue(); //int fuelValue
+     Item[] getCombustionProducts(); //Item[] products
 }

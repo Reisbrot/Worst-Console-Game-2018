@@ -5,11 +5,13 @@ import java.awt.Dimension;
 
 
 public interface Item { 
-     void setWeight(int weight);
+     int getWeight(); //int weight
     
-     void setHardness(int hardness);
+     int getHardness(); //int hardness
     
-     void setSmell (Smell smell);
+     Smell getSmell(); //Smell smell
      
-     void setAggregateState (String phase);
+     String getAggregateState(); //String phase
+     
+     String getDescription(); //String description
 }
