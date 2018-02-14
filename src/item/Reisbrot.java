@@ -5,8 +5,22 @@ import main.Smell;
 
 
 public class Reisbrot implements Eatable{
-    int energyValue = 0; //in IDK
+    String name = "Reisbrot";
+    int weight = 375; //in Gramm
+    int energyValue = 3687; //in FOPS/Joule in RL
+    Item[] nutrients = {}; //Eigentlich andere Sachen
+    int overdoseAmount = 435; //Gramm
+    String[] overdoseSymptoms = {"Verstopfung"}; //Kriegen noch ne eigene Klasse, damit sie auch was bewirken (:
+    int waterContent = 38; //Prozent
+    int hardness = 1; //Mohs
+    Smell smell = new Smell(3);
+    String phase = "solid"; //liquid, gas
+    String description = "Lecker! Schmeckt nach Entwickler. Und nach Reis.";
     
+    @Override
+    public String getName(){
+        return name;   
+    }
     
     @Override
     public int getEnergyValue() {
@@ -15,47 +29,47 @@ public class Reisbrot implements Eatable{
 
     @Override
     public Item[] getNutrients() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return nutrients;
     }
 
     @Override
     public int getOverdoseAmount() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return overdoseAmount;
     }
 
     @Override
     public String[] getOverdoseSymptoms() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return overdoseSymptoms;
     }
 
     @Override
     public int getWaterContent() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return waterContent;
     }
 
     @Override
     public int getWeight() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return weight;
     }
 
     @Override
     public int getHardness() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return hardness;
     }
 
     @Override
     public Smell getSmell() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return smell;
     }
 
     @Override
     public String getAggregateState() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return phase;
     }
 
     @Override
     public String getDescription() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return description;
     }
 
 }

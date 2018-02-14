@@ -3,9 +3,9 @@ Lol.
 
 Quick Ref is this Table. Everything else is not very important. It just hangs around.
 
-Einheit  Groesse  Implemented
+Einheit  Groesse  Implemented       Annotation
 
-Energy   FOPS     No
+Energy   FOPS     No           The same as KiloJoule!
 Weight   Gram     No
 Length   Metre    No
 Hardness Mohs     No

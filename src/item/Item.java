@@ -5,6 +5,8 @@ import java.awt.Dimension;
 
 
 public interface Item { 
+    String getName(); //String name
+    
      int getWeight(); //int weight
     
      int getHardness(); //int hardness

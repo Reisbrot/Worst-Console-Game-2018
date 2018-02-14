@@ -26,5 +26,9 @@ public class Smell {
     public Smell(String smell){
         this.smell = smell;
     }
+    
+    public String getSmellString(){
+        return this.smell;
+    }
 }
 

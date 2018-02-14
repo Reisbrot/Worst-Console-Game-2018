@@ -6,6 +6,7 @@ import main.Smell;
 
 
 public class Chemical implements Item{
+    String name = "undefined";
     int weight = 1;
     int hardness = 1;
     Smell smell = new Smell(0);
@@ -52,6 +53,11 @@ public class Chemical implements Item{
     @Override
     public String getAggregateState() {
         return phase;
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
  
     
