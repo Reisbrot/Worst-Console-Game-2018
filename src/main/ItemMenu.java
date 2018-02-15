@@ -19,7 +19,7 @@ public class ItemMenu {
       System.out.println("");
       System.out.println("");
       System.out.println("");
-      System.out.printf(RowEndBuilder().toString()+"\n");
+      System.out.printf(RowBottomBuilder().toString()+"\n");
     }
       ItemMenu(String itemName, String description){
       setItemName(itemName);
@@ -31,7 +31,7 @@ public class ItemMenu {
       System.out.println("");
       System.out.println("");
       System.out.println("");
-      System.out.printf(RowEndBuilder().toString()+"\n");
+      System.out.printf(RowBottomBuilder().toString()+"\n");
     }
       
     ItemMenu(Item item){
@@ -41,22 +41,31 @@ public class ItemMenu {
       setSmell(item.getSmell());
       setAggregateState(item.getAggregateState());
       
-      System.out.printf("----" + itemName + "----\n");
+      System.out.printf(RowTopBuilder() + itemName + RowTopBuilder() + "\n");
       System.out.println(description);
       System.out.println("Aggregatszustand:  " + aggregateState);
       System.out.println("Geruchsintensität: " + smell);
       System.out.println("Gewicht:           " + weight);
       System.out.println("");
       System.out.println("");
-      System.out.printf(RowEndBuilder().toString()+"\n");
+      System.out.printf(RowBottomBuilder()+"\n");
     }
-      
-    public StringBuilder RowEndBuilder(){
-     StringBuilder rowEnd = new StringBuilder();
-     int rowLength = 4 + itemName.length() + 4;
-     for(int i = 0; i < rowLength; i++)
-         rowEnd.append('-');
-     return rowEnd;
+     StringBuilder RowTopBuilder(){
+        int rowLength = (38 - itemName.length()/2)/2;         //Hälfte der gesamten Länge minus ItemName, weil muss auf beide Seiten oben                   
+        StringBuilder rowTop = new StringBuilder();
+        if(description.length() > 38)                         //38 ist längstes anderes Attribut, "sehr gut wahrnehmbar"
+        rowLength = (description.length() - itemName.length()/2)/2;
+        for(int i = 0; i < rowLength; i++)
+            rowTop.append('-');
+        return rowTop;
+     } 
+    
+     StringBuilder RowBottomBuilder(){
+        StringBuilder rowEnd = new StringBuilder(RowTopBuilder().append(RowTopBuilder()));  //Die Länge wie oben, ItemName fehlt noch
+        int rowLength = itemName.length();
+        for(int i = 0; i < rowLength; i++)
+            rowEnd.append('-');                                                             //Wird hier drangehängt
+        return rowEnd;
     }
 
     private void setItemName(String itemName) {
