@@ -1,4 +1,4 @@
-package item;
+package item.interfaces;
 
 
 public interface Burnable extends Item{

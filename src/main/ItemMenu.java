@@ -1,6 +1,6 @@
 package main;
 
-import item.Item;
+import item.interfaces.Item;
 
 
 public class ItemMenu {

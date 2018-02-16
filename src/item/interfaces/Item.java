@@ -1,4 +1,4 @@
-package item;
+package item.interfaces;
 
 import main.Smell;
 import java.awt.Dimension;

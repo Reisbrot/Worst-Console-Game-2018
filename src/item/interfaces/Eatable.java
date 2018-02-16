@@ -1,4 +1,4 @@
-package item;
+package item.interfaces;
 
 
 public interface Eatable extends Item{

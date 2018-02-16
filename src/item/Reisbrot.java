@@ -1,6 +1,8 @@
 
 package item;
 
+import item.interfaces.Item;
+import item.interfaces.Eatable;
 import main.Smell;
 
 
