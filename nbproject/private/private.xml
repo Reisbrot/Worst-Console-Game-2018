@@ -4,16 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/MenuBuilder.java</file>
-            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Burnable.java</file>
-            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Chemical.java</file>
-            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Eatable.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/Moist.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/ItemMenu.java</file>
-            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Item.java</file>
-            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Degradable.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/interfaces/Eatable.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/interfaces/Degradable.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/chemical/Cuban.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/interfaces/Burnable.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Reisbrot.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/interfaces/Chemical.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/Smell.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/Various%20Drawings%20and%20Exel%20Sheets%20and%20Plans%20for%20building%20a%20nuclear%20weapon.%20that%20kind%20of%20stuff/Units%20and%20Physics%20stuff</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/interfaces/Item.java</file>
         </group>
     </open-files>
 </project-private>

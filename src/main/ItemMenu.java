@@ -1,5 +1,6 @@
 package main;
 
+import item.interfaces.Chemical;
 import item.interfaces.Item;
 
 
@@ -10,6 +11,9 @@ public class ItemMenu {
     String aggregateState = "solid";
     String weight = "1 Gramm";
     String smell;
+    String meltingPoint;
+    String boilingPoint;
+    String molarMass;
 
       ItemMenu(String itemName){
       System.out.printf("----" + itemName + "----\n");
@@ -50,6 +54,32 @@ public class ItemMenu {
       System.out.println("");
       System.out.printf(RowBottomBuilder()+"\n");
     }
+    
+    
+    ItemMenu(Chemical chemical){
+      setItemName(chemical.getName());
+      setDescription(chemical.getDescription());
+      setMolarMass(chemical.getMolarMass());
+      setSmell(chemical.getSmell());
+      setAggregateState(chemical.getAggregateState());
+      setMeltingPoint(chemical.getMeltingPoint());
+      setBoilingPoint(chemical.getBoilingPoint());
+      
+      System.out.printf(RowTopBuilder() + itemName + RowTopBuilder() + "\n");
+      System.out.println(description);
+      System.out.println("Aggregatszustand:  " + aggregateState);
+      System.out.println("Geruchsintensität: " + smell);
+      System.out.println("Molare Masse:      " + molarMass);
+      System.out.println("Schmelpunkt:       " + meltingPoint);
+      System.out.println("Siedepunkt:        " + boilingPoint);
+      System.out.printf(RowBottomBuilder()+"\n");
+    }
+    
+    
+    
+    
+    
+    
      StringBuilder RowTopBuilder(){
         int rowLength = (38 - itemName.length()/2)/2;         //Hälfte der gesamten Länge minus ItemName, weil muss auf beide Seiten oben                   
         StringBuilder rowTop = new StringBuilder();
@@ -68,6 +98,8 @@ public class ItemMenu {
         return rowEnd;
     }
 
+     
+     
     private void setItemName(String itemName) {
         this.itemName = itemName;
     }
@@ -96,4 +128,16 @@ public class ItemMenu {
         else
         this.weight = weightG + "Gramm";
     }    
+
+    public void setMeltingPoint(int meltingPoint) {
+        this.meltingPoint = meltingPoint + "\u00B0C";   //Der Unicode ist für "Grad" Celsius. Für absichtlich mit ü ohne unicode formatting weil meta haha lol iksde so funny
+    }
+
+    public void setBoilingPoint(int boilingPoint) {
+        this.boilingPoint = boilingPoint + "\u00B0C";
+    }
+
+    private void setMolarMass(double molarMass) {
+        this.molarMass = molarMass + "Gramm/mol";
+    }
 }

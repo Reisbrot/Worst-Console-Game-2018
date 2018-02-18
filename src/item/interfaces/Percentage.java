@@ -1,5 +1,5 @@
 
-package item;
+package item.interfaces;
 
 
 class Percentage {
