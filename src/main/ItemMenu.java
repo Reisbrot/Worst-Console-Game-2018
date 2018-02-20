@@ -70,7 +70,7 @@ public class ItemMenu {
       System.out.println("Aggregatszustand:  " + aggregateState);
       System.out.println("Geruchsintensität: " + smell);
       System.out.println("Molare Masse:      " + molarMass);
-      System.out.println("Schmelpunkt:       " + meltingPoint);
+      System.out.println("Schmelzpunkt:       " + meltingPoint);
       System.out.println("Siedepunkt:        " + boilingPoint);
       System.out.printf(RowBottomBuilder()+"\n");
     }

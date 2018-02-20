@@ -4,7 +4,7 @@ import main.Smell;
 import java.awt.Dimension;
 
 
-public interface Item { 
+public interface Item extends Comparable<Item>{ 
     String getName(); //String name
     
      int getWeight(); //int weight
