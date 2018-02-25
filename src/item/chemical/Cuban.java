@@ -7,7 +7,7 @@ import main.Smell;
 
 
 public class Cuban implements Chemical{
-   String name = "SCuban | C8H8";
+   String name = "Cuban | C8H8";
    int weight = 1;
    int hardness = 1;
    Smell smell = new Smell(0);
