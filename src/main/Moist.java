@@ -19,7 +19,7 @@ public class Moist {
          InventoryBuilder invi = new InventoryBuilder(new Item[] {c,r,r});
          //Smell smell = new Smell(4);
          WorldDisplay wdisplay;
-         while(true) //Update Loop des 7ødéß
-         wdisplay = new WorldDisplay(t);
+         MainLoop loop = new MainLoop();
+         loop.loopy();
     }   
 }
