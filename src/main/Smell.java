@@ -2,6 +2,7 @@ package main;
 
 public class Smell {
     String smell;
+    int smellscale;
     
     public Smell(){
         smell = "Geruchslos";
@@ -21,6 +22,7 @@ public class Smell {
             case 8: smell = "Reizend"; break;
             default: smell = "Geruchslos";
         }
+        this.smellscale = smellscale;
     }
     
     public Smell(String smell){
@@ -29,6 +31,10 @@ public class Smell {
     
     public String getSmellString(){
         return this.smell;
+    }
+    
+    public int getSmellValue(){
+        return this.smellscale;
     }
 }
 

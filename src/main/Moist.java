@@ -1,11 +1,15 @@
-
 package main;
 
+import dev.ItemClassTemplate;
 import inventory.InventoryBuilder;
 import item.Reisbrot;
+import item.Trockenhefe;
 import item.Ziegelstein;
 import item.chemical.Cuban;
 import item.interfaces.Item;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import world.TestWorld;
 
 public class Moist {
@@ -19,8 +23,12 @@ public class Moist {
          ItemMenu genericItem = new ItemMenu(r);
          ItemMenu genericZiegel = new ItemMenu(z);
          ItemMenu genericChemical = new ItemMenu(c);
-         InventoryBuilder invi = new InventoryBuilder(new Item[] {c,r,r,z,z,z,c,c,z,r,r,r,r,r,r,r,z}); //TOFIX
-         //Smell smell = new Smell(4);
+         Smell smell = new Smell(4);
          WorldDisplay wdisplay;
-    }   
-}
+         ItemClassTemplate.createItem("Trockenhefe",7,1,smell,"solid","Ist ja eigentlich schon Fleisch.");
+         Trockenhefe th = new Trockenhefe();
+         ItemMenu genericPilz = new ItemMenu(th);
+         InventoryBuilder invi = new InventoryBuilder(new Item[] {c,r,r,z,z,z,c,c,z,r,r,r,r,r,r,r,z,th}); //TOFIX
+
+    }
+}   
