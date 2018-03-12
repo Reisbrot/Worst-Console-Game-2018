@@ -5,17 +5,18 @@
         <group>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/inventory/InventoryBuilder.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/chemical/Cuban.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Trockenhefe.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Reisbrot.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/EinbeckerBierdeckel.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/WorldDisplay.java</file>
-            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/Moist.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/dev/ItemClassTemplate.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/ItemMenu.java</file>
+            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/Moist.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/interfaces/Degradable.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/world/TestWorld.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/interfaces/Chemical.java</file>
-            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/chemical/Cunean.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/Ziegelstein.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/main/Smell.java</file>
-            <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/Various%20Drawings%20and%20Exel%20Sheets%20and%20Plans%20for%20building%20a%20nuclear%20weapon.%20that%20kind%20of%20stuff/Units%20and%20Physics%20stuff</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/item/interfaces/Item.java</file>
             <file>file:/C:/Users/corni/Documents/GitHub/WorstConsoleGame2018(WCG)/src/world/World.java</file>
         </group>
