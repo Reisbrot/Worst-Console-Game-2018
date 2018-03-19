@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class InventoryBuilder { //funktioniert noch nich so geil.
     public InventoryBuilder(Item[] items){         //Alphabetisch
         Arrays.sort(items);
-        String buffer = "";                     //Wenn Items doppelt vorkommen, kommen sie nacheinander im Array, da geordnet! Dadurch werden doppelte Items als 2 x "Item" bezeichnet :))))
+        String buffer = items[0].getName();                    //Wenn Items doppelt vorkommen, kommen sie nacheinander im Array, da geordnet! Dadurch werden doppelte Items als 2 x "Item" bezeichnet :))))
         String outputBuffer = "";
         int itemCounter = 1;
         for(Item item : items){
@@ -19,9 +19,9 @@ public class InventoryBuilder { //funktioniert noch nich so geil.
             else{
                 outputBuffer = item.getName() + ": x" + itemCounter;
                 itemCounter = 1;
+                System.out.println(outputBuffer);
             }
             buffer = item.getName();
-            System.out.println(outputBuffer);
         }
     }
 }

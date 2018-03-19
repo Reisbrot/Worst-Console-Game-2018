@@ -25,7 +25,7 @@ public class Moist {
          ItemMenu genericChemical = new ItemMenu(c);
          Smell smell = new Smell(0);
          WorldDisplay wdisplay;
-         ItemClassTemplate.createItem("Einbecker-Bierdeckel",5,4,smell,"solid","Das Einbecker-Logo, umgeben von Zacken!");
+         ItemClassTemplate.createItem("L\u00f6ffel",60, 4, smell, "solid", "Eine Gravur verr\u00e4t: Edelstahl Rostfrei, BGN Manufaktur. Rostbl\u00fcten zu erkennen.");
          Trockenhefe th = new Trockenhefe();
          ItemMenu genericPilz = new ItemMenu(th);
          InventoryBuilder invi = new InventoryBuilder(new Item[] {c,r,r,z,z,z,c,c,z,r,r,r,r,r,r,r,z,th}); //TOFIX
