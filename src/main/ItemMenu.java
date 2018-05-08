@@ -138,6 +138,6 @@ public class ItemMenu {
     }
 
     private void setMolarMass(double molarMass) {
-        this.molarMass = molarMass + "Gramm/mol";
+        this.molarMass = molarMass + "Gramm";
     }
 }
