@@ -59,39 +59,7 @@ public class ItemClassTemplate {
 "\n" +
 "    @Override\n" +
 "    public int compareTo(Item ii) {\n" +
-"        char a,b,c,d,e,f,g,h,i,j,k; a = '0'; b = '0'; c = '0'; d = '0'; e = '0'; f = '0'; g = '0'; h = '0'; i = '0'; j = '0';\n" +
-"        try{\n" +
-"        a = ii.getName().charAt(0);\n" +
-"        b = ii.getName().charAt(1);\n" +
-"        c = ii.getName().charAt(2);\n" +
-"        d = ii.getName().charAt(3);\n" +
-"        e = ii.getName().charAt(4);\n" +
-" \n" +
-"        f = getName().charAt(0);\n" +
-"        g = getName().charAt(1);\n" +
-"        h = getName().charAt(2);\n" +
-"        i = getName().charAt(3);\n" +
-"        j = getName().charAt(4);\n" +
-"        }\n" +
-"        catch(Exception ex){\n" +
-"            if(a == f)\n" +
-"                if(b == g)\n" +
-"                    if(c == h)\n" +
-"                        if(d == i)\n" +
-"                            if(e == j)\n" +
-"                                return -1;\n" +
-"            else\n" +
-"                                return Math.abs(e - j);\n" +
-"            else\n" +
-"                            return Math.abs(d - i);\n" +
-"            else\n" +
-"                        return Math.abs(c - h);\n" +
-"            else\n" +
-"                    return Math.abs(b - g);\n" +
-"            else\n" +
-"                Math.abs(a - f);\n" +
-"        }\n" +
-"        return Math.abs(a - f);\n" +
+"        return name.compareTo(ii.getName());\n" +
 "    }\n" +
 "\n" +
 "}"

@@ -1,14 +1,17 @@
 
 package inventory;
 
+import item.comparators.Alphabetical;
 import item.interfaces.Item;
 import java.awt.ItemSelectable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 
 public class InventoryBuilder { //funktioniert noch nich so geil.
     public InventoryBuilder(Item[] items){         //Alphabetisch
+        Collections.sort(items);
         String buffer = items[0].getName(); 
         String outputBuffer = "";
         int itemCounter = 1;

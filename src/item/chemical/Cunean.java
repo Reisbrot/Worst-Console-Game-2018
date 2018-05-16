@@ -102,8 +102,8 @@ public class Cunean implements Chemical{
     }
 
     @Override
-    public int compareTo(Item i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int compareTo(Item ii) {
+        return name.compareTo(ii.getName());
     }
 
 }

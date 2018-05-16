@@ -16,4 +16,6 @@ public interface Item extends Comparable<Item>{
      String getAggregateState(); //String phase
      
      String getDescription(); //String description
+     
+     int compareTo(Item o);
 }
